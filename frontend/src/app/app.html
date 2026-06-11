@@ -1,0 +1,3239 @@
+<div class="control-panel" *ngIf="!isGeneratingPdf">
+  <button class="export-pdf-btn" (click)="downloadPdf()">
+    <span>Export PDF via Playwright</span>
+  </button>
+</div>
+
+<div id="pdfTable" class="report-content-root">
+  <div class="report-header-text">
+    <h2>Sub Heading</h2>
+    <p>Enter the Name</p>
+  </div>
+
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg"
+    width="20%"
+    heigh="40%"
+    alt="Landscape"
+  />
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Example.jpg" 
+    width="20%"
+    heigh="40%"
+    alt="Example"
+  />
+
+  <div class="chart-display-card">
+    <ngx-charts-bar-vertical
+      [view]="view"
+      [results]="chartData"
+      [xAxis]="true"
+      [yAxis]="true"
+      [legend]="false"
+    >
+    </ngx-charts-bar-vertical>
+  </div>
+
+  <div class="table-container">
+    <table class="report-data-grid">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Q1</th>
+          <th>Q2</th>
+          <th>Q3</th>
+          <th>Q4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Product A</td>
+          <td>700</td>
+          <td>5000</td>
+          <td>3500</td>
+          <td>4000</td>
+        </tr>
+        <tr>
+          <td>Product B</td>
+          <td>300</td>
+          <td>600</td>
+          <td>5000</td>
+          <td>2500</td>
+        </tr>
+        <tr>
+          <td>Product C</td>
+          <td>450</td>
+          <td>300</td>
+          <td>2000</td>
+          <td>1800</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="filters-summary-block">
+    <h4>APPLIED FILTERS</h4>
+    <p><strong>Year :</strong> for Testing</p>
+  </div>
+
+  <div>
+    <div
+      class="enable-border full-width-height"
+      id="zcttw"
+      style="
+        height: 100%;
+        padding: 0px;
+        font-size: 13px;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: left top;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-blend-mode: normal;
+        border-width: 0px;
+        border-style: none;
+        border-color: rgb(255, 255, 255);
+        border-radius: 0px;
+        opacity: 1;
+        overflow: visible;
+        cursor: auto;
+        pointer-events: auto;
+      "
+    >
+      <!---->
+      <div class="rt-flex-items rt-full-height display-properties">
+        <div
+          _nghost-ng-c1482363183=""
+          class="ng-star-inserted"
+          style="
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            position: static;
+            --arrow-size: 139px;
+            --arrow-color: #fff;
+            --arrow-border-color: rgba(255, 255, 255, 100);
+          "
+        >
+          <div
+            _ngcontent-ng-c1482363183=""
+            class="enable-border full-width-height dark-light-theme-container"
+            id="njxrk"
+            draggable="false"
+            style="
+              height: 100%;
+              padding: 0px;
+              font-size: 13px;
+              background-image: none;
+              background-repeat: no-repeat;
+              background-size: auto;
+              background-position: left top;
+              background-attachment: scroll;
+              background-clip: border-box;
+              background-blend-mode: normal;
+              border-width: 0px;
+              border-style: none;
+              border-color: rgb(255, 255, 255);
+              border-radius: 0px;
+              opacity: 1;
+              overflow: visible;
+              cursor: auto;
+              pointer-events: auto;
+              transform: none;
+            "
+          >
+            <!---->
+            <div
+              _ngcontent-ng-c1482363183=""
+              class="display-inherit-properties rt-flex-items full-width-height"
+            >
+              <!----><!----><!---->
+              <div
+                class="d-flex ng-star-inserted"
+                style="display: flex; width: 100%; height: auto; position: static"
+              >
+                <label
+                  class="dark-light-theme-label full-width-height ng-star-inserted"
+                  id="jsxjj"
+                  draggable="false"
+                  style="
+                    padding: 0px;
+                    font-weight: normal;
+                    font-style: normal;
+                    text-decoration: none;
+                    word-break: normal;
+                    font-family: Roboto, sans-serif;
+                    font-size: 13px;
+                    text-transform: none;
+                    writing-mode: horizontal-tb;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    cursor: auto;
+                    pointer-events: auto;
+                    opacity: 1;
+                    overflow: visible;
+                    text-overflow: clip;
+                    white-space: normal;
+                    transform: none;
+                  "
+                  ><!---->Sub Heading<!----><!----></label
+                ><!----><!----><!---->
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!---->
+              <div
+                class="d-flex ng-star-inserted"
+                style="margin: 0px; width: 100%; height: auto; position: static"
+              >
+                <label
+                  class="dark-light-theme-label full-width-height ng-star-inserted"
+                  id="jbbah"
+                  draggable="false"
+                  style="
+                    padding: 0px;
+                    font-weight: normal;
+                    font-style: normal;
+                    text-decoration: none;
+                    word-break: normal;
+                    font-family: Roboto, sans-serif;
+                    font-size: 13px;
+                    text-transform: none;
+                    writing-mode: horizontal-tb;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    cursor: auto;
+                    pointer-events: auto;
+                    opacity: 1;
+                    overflow: visible;
+                    text-overflow: clip;
+                    white-space: normal;
+                    transform: none;
+                  "
+                  ><!---->Enter the Name
+                  <!----><!----></label
+                ><!----><!----><!---->
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!---->
+              <div class="ng-star-inserted" style="">
+                <div class="rt-display-initial ng-star-inserted" style="border-radius: 0px">
+                  <img
+                    crossorigin="*"
+                    class="image-wrapper"
+                    id="afpce"
+                    src="https://devum-client-public-bucket.s3.amazonaws.com/vikiai-dev/images/images/ChatGPT+Image+May+20%2C+2026%2C+01_00_29+PM_mzfws.png?not-from-cache-please"
+                    style="padding: 0px; margin: 0px; width: 20%; height: 60%; cursor: auto"
+                  /><!----><!---->
+                </div>
+
+                <div class="rt-display-initial ng-star-inserted" style="border-radius: 0px">
+                  <img
+                    crossorigin="*"
+                    class="image-wrapper"
+                    id="afpce"
+                    src="https://devum-client-public-bucket.s3.amazonaws.com/vikiai-dev/images/images/ChatGPT+Image+May+20%2C+2026%2C+01_00_29+PM_mzfws.png?not-from-cache-please"
+                    style="padding: 0px; margin: 0px; width: 20%; height: 60%; cursor: auto"
+                  /><!----><!---->
+                </div>
+                <div class="rt-display-initial ng-star-inserted" style="border-radius: 0px">
+                  <img
+                    crossorigin="*"
+                    class="image-wrapper"
+                    id="afpce"
+                    src="https://devum-client-public-bucket.s3.amazonaws.com/vikiai-dev/images/images/ChatGPT+Image+May+20%2C+2026%2C+01_00_29+PM_mzfws.png?not-from-cache-please"
+                    style="padding: 0px; margin: 0px; width: 20%; height: 60%; cursor: auto"
+                  /><!----><!---->
+                </div>
+                <div class="rt-display-initial ng-star-inserted" style="border-radius: 0px">
+                  <img
+                    crossorigin="*"
+                    class="image-wrapper"
+                    id="afpce"
+                    src="https://devum-client-public-bucket.s3.amazonaws.com/vikiai-dev/images/images/ChatGPT+Image+May+20%2C+2026%2C+01_00_29+PM_mzfws.png?not-from-cache-please"
+                    style="padding: 0px; margin: 0px; width: 20%; height: 60%; cursor: auto"
+                  /><!----><!---->
+                </div>
+                <!----><!---->
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!---->
+              <div class="d-flex ng-star-inserted" style="margin: 0px; width: 100px; height: 40px">
+                <button
+                  mat-raised-button=""
+                  mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                  class="mdc-button mdc-button--raised mat-mdc-raised-button full-width-height mat-unthemed mat-mdc-button-base"
+                  id="dqebh"
+                  style="
+                    padding: 0px;
+                    margin: 0px;
+                    width: 100px;
+                    height: 40px;
+                    background-color: rgb(207, 198, 247);
+                    fill: rgb(255, 128, 171);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    font-weight: normal;
+                    font-style: normal;
+                    text-decoration: none;
+                    word-break: normal;
+                    font-family: Roboto, sans-serif;
+                    font-size: 13px;
+                    text-transform: none;
+                    writing-mode: horizontal-tb;
+                    opacity: 1;
+                    cursor: pointer;
+                    pointer-events: auto;
+                  "
+                >
+                  <span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span
+                  ><span class="mdc-button__label">
+                    <div style="display: flex">
+                      <!---->
+                      Submit
+                    </div> </span
+                  ><span class="mat-mdc-focus-indicator"></span
+                  ><span class="mat-mdc-button-touch-target"></span
+                  ><span class="mat-ripple mat-mdc-button-ripple"></span>
+                </button>
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!----><!---->
+            </div>
+          </div>
+        </div>
+        <div class="ng-star-inserted" style="display: none"></div>
+        <!----><!---->
+      </div>
+    </div>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+    width="20%"
+    heigh="40%"
+    alt="Dog"
+  />
+
+  <ngx-charts-bar-vertical
+    [view]="view"
+    [results]="chartData"
+    [xAxis]="true"
+    [yAxis]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    xAxisLabel="Values"
+    yAxisLabel="Amount"
+  >
+  </ngx-charts-bar-vertical>
+
+  <div>
+    <table
+      style="
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+      "
+    >
+      <thead>
+        <tr style="background-color: #f2f2f2">
+          <th style="border: 1px solid #ccc; padding: 8px">Product</th>
+          <th style="border: 1px solid #ccc; padding: 8px">Q1</th>
+          <th style="border: 1px solid #ccc; padding: 8px">Q2</th>
+          <th style="border: 1px solid #ccc; padding: 8px">Q3</th>
+          <th style="border: 1px solid #ccc; padding: 8px">Q4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 8px">Product A</td>
+          <td style="border: 1px solid #ccc; padding: 8px">700</td>
+          <td style="border: 1px solid #ccc; padding: 8px">5000</td>
+          <td style="border: 1px solid #ccc; padding: 8px">3500</td>
+          <td style="border: 1px solid #ccc; padding: 8px">4000</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 8px">Product B</td>
+          <td style="border: 1px solid #ccc; padding: 8px">300</td>
+          <td style="border: 1px solid #ccc; padding: 8px">600</td>
+          <td style="border: 1px solid #ccc; padding: 8px">5000</td>
+          <td style="border: 1px solid #ccc; padding: 8px">2500</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 8px">Product C</td>
+          <td style="border: 1px solid #ccc; padding: 8px">450</td>
+          <td style="border: 1px solid #ccc; padding: 8px">300</td>
+          <td style="border: 1px solid #ccc; padding: 8px">2000</td>
+          <td style="border: 1px solid #ccc; padding: 8px">1800</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 8px">Product D</td>
+          <td style="border: 1px solid #ccc; padding: 8px">400</td>
+          <td style="border: 1px solid #ccc; padding: 8px">3500</td>
+          <td style="border: 1px solid #ccc; padding: 8px">2200</td>
+          <td style="border: 1px solid #ccc; padding: 8px">1600</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 8px">Product E</td>
+          <td style="border: 1px solid #ccc; padding: 8px">500</td>
+          <td style="border: 1px solid #ccc; padding: 8px">4000</td>
+          <td style="border: 1px solid #ccc; padding: 8px">3000</td>
+          <td style="border: 1px solid #ccc; padding: 8px">2800</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="padding: 0 10px">
+    <!-- <ngx-charts-bar-vertical-2d
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="multi"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+    
+    >
+    </ngx-charts-bar-vertical-2d> -->
+    <div id="report-cloned-pdf-zoadx" class="rt-mr-auto">
+      <div
+        class="ng-star-inserted"
+        style="
+          margin: 0px;
+          width: 100%;
+          height: auto;
+          position: static;
+          --arrow-size: 0px;
+          --arrow-color: transparent;
+          --arrow-border-color: rgba(188, 188, 188, 1);
+        "
+      >
+        <div
+          class="enable-border full-width-height"
+          id="qzaqa"
+          ng-reflect-ng-class=""
+          ng-reflect-ng-style="[object Object]"
+          style="
+            height: 100%;
+            padding: 5px 8px 10px;
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            background-image: none;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: left top;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-blend-mode: normal;
+            border-width: 0px 0px 0.5px;
+            border-style: none none dashed;
+            border-color: rgb(188, 188, 188) rgb(188, 188, 188) rgb(186, 188, 197);
+            border-radius: 0px;
+            overflow: hidden;
+            transform: none;
+          "
+        >
+          <!--bindings={}--><!--ng-container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }-->
+          <h1 class="ng-star-inserted">
+            <h1
+              id="myfiy"
+              ng-reflect-ng-style="[object Object]"
+              ctrlinstance="[object Object]"
+              ctrldescriptor="[object Object]"
+              class="ng-star-inserted"
+              style="
+                padding: 0px 0px 8px;
+                margin: 0px;
+                width: 100%;
+                height: auto;
+                background-color: transparent;
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-blend-mode: normal;
+                border-width: 0px;
+                border-style: none;
+                border-color: rgb(255, 255, 255);
+                font-weight: bold;
+                font-style: normal;
+                word-break: normal;
+                font-family: Roboto, sans-serif;
+                color: rgb(109, 109, 109);
+                font-size: 16px;
+                text-transform: none;
+              "
+            >
+              APPLIED FILTERS
+            </h1>
+            <!--bindings={
+      "ng-reflect-ng-if": "myfiy"
+    }-->
+          </h1>
+          <!--container-->
+          <div
+            class="ng-star-inserted"
+            style="
+              margin: 0px;
+              width: 100%;
+              height: auto;
+              position: static;
+              --arrow-size: 0px;
+              --arrow-color: transparent;
+              --arrow-border-color: rgba(255, 255, 255, 100);
+            "
+          >
+            <div
+              class="enable-border full-width-height"
+              id="bwgja"
+              ng-reflect-ng-class=""
+              ng-reflect-ng-style="[object Object]"
+              style="
+                height: 100%;
+                padding: 0px;
+                display: flex;
+                background-color: transparent;
+                color: rgb(0, 0, 0);
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-blend-mode: normal;
+                border-width: 0px;
+                border-style: none;
+                border-color: rgb(255, 255, 255);
+                border-radius: 0px;
+                transform: none;
+              "
+            >
+              <!--bindings={}--><!--ng-container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><label
+                class="d-flex ng-star-inserted"
+                style="margin: 0px; width: 70px; height: auto; position: static"
+                ><label
+                  class="mat-mdc-tooltip-trigger full-width-height ng-star-inserted"
+                  ng-reflect-ng-class="full-width-height"
+                  id="mrwxc"
+                  ng-reflect-ng-style="[object Object]"
+                  ng-reflect-position="below"
+                  ng-reflect-tooltip-class="mrwxc-cssClass"
+                  style="
+                    padding: 0px;
+                    font-weight: normal;
+                    font-style: normal;
+                    text-decoration: none;
+                    word-break: normal;
+                    font-family: Roboto, sans-serif;
+                    color: rgb(0, 0, 0);
+                    font-size: 13px;
+                    text-transform: none;
+                    writing-mode: horizontal-tb;
+                    background-color: transparent;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    cursor: pointer;
+                    transform: none;
+                  "
+                  ><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }-->Year :<!--ng-container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--></label
+                ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "mrwxc"
+    }--></label
+              ><!--container--><label
+                class="d-flex ng-star-inserted"
+                style="margin: 0px; width: 100%; height: auto; position: static"
+                ><label
+                  class="mat-mdc-tooltip-trigger full-width-height ng-star-inserted"
+                  ng-reflect-ng-class="full-width-height"
+                  id="thkiw"
+                  ng-reflect-ng-style="[object Object]"
+                  ng-reflect-position="below"
+                  ng-reflect-tooltip-class="thkiw-cssClass"
+                  style="
+                    padding: 0px;
+                    font-weight: bold;
+                    font-style: normal;
+                    text-decoration: none;
+                    word-break: normal;
+                    font-family: Roboto, sans-serif;
+                    color: rgb(0, 0, 0);
+                    font-size: 13px;
+                    text-transform: none;
+                    writing-mode: horizontal-tb;
+                    background-color: transparent;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    cursor: pointer;
+                    transform: none;
+                  "
+                  ><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }-->for Testing<!--ng-container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--></label
+                ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "thkiw"
+    }--></label
+              ><!--container--><!--container-->
+            </div>
+          </div>
+          <!--container--><!--container-->
+        </div>
+      </div>
+      <!--container-->
+      <div
+        class="ng-star-inserted"
+        style="
+          margin: 20px 0px 0px;
+          width: 100%;
+          height: auto;
+          position: static;
+          --arrow-size: 0px;
+          --arrow-color: rgba(239, 231, 231, 1);
+          --arrow-border-color: rgba(186, 188, 197, 1);
+        "
+      >
+        <div
+          class="enable-border full-width-height"
+          id="dilug"
+          ng-reflect-ng-class=""
+          ng-reflect-ng-style="[object Object]"
+          style="
+            height: 100%;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: rgb(239, 231, 231);
+            color: rgb(0, 0, 0);
+            background-image: none;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: left top;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-blend-mode: normal;
+            border-width: 0px;
+            border-style: none;
+            border-color: rgb(186, 188, 197);
+            border-radius: 0px;
+            overflow: hidden;
+            transform: none;
+          "
+        >
+          <!--bindings={}--><!--ng-container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><label
+            class="d-flex ng-star-inserted"
+            style="margin: 0px; width: 100%; height: 40px; position: static"
+            ><label
+              class="mat-mdc-tooltip-trigger full-width-height ng-star-inserted"
+              ng-reflect-ng-class="full-width-height"
+              id="faede"
+              ng-reflect-ng-style="[object Object]"
+              ng-reflect-position="below"
+              ng-reflect-tooltip-class="faede-cssClass"
+              style="
+                padding: 0px;
+                font-weight: bold;
+                font-style: normal;
+                text-decoration: none;
+                word-break: normal;
+                font-family: Roboto, sans-serif;
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                text-transform: none;
+                writing-mode: horizontal-tb;
+                display: flex;
+                align-items: center;
+                background-color: transparent;
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-blend-mode: normal;
+                border-width: 1px 1px 0px;
+                border-style: solid solid none;
+                border-color: rgb(224, 224, 224) rgb(224, 224, 224) rgb(255, 255, 255);
+                border-radius: 0px;
+                transform: none;
+              "
+              ><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }-->BBSO<!--ng-container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--></label
+            ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "faede"
+    }--></label
+          ><!--container--><label
+            class="d-flex ng-star-inserted"
+            style="margin: 0px; width: 100%; height: auto; position: static"
+            ><label
+              class="mat-mdc-tooltip-trigger full-width-height ng-star-inserted"
+              ng-reflect-ng-class="full-width-height"
+              id="djcjr"
+              ng-reflect-ng-style="[object Object]"
+              ng-reflect-message=""
+              ng-reflect-position="below"
+              ng-reflect-tooltip-class="djcjr-cssClass"
+              style="
+                padding: 0px;
+                font-weight: normal;
+                font-style: normal;
+                text-decoration: none;
+                word-break: break-word;
+                font-family: Roboto, sans-serif;
+                color: rgb(0, 0, 0);
+                font-size: 13px;
+                text-transform: none;
+                writing-mode: horizontal-tb;
+                background-color: transparent;
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-blend-mode: normal;
+                border-width: 0px;
+                border-style: none;
+                border-color: rgb(255, 255, 255);
+                border-radius: 0px;
+                transform: none;
+              "
+              ><ng-container
+                ng-reflect-html='<table class="rt-border-top rt'
+                class="ng-star-inserted"
+              ></ng-container
+              ><ng-container hostid="ba5mb0b8bk" class="ng-star-inserted"
+                ><table
+                  class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                  style="border: 0; border-spacing: 0"
+                >
+                  <tr class="rt-flex-row rt-full-height">
+                    <td class="rt-border-right rt-pl-5" style="width: 12%">
+                      <b>Mines</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>FH &amp; DH</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>BBSO (target 6/month) in the month</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>% Achievement in the month</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>BBSO Cumulative</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>% Achievement in the year</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>SH &amp; AH &amp; LMS</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>BBSO (target 6/month) in the month</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>% Achievement in the month</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>BBSO cumulative</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>% Achievement in the year</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>Normal target per month</b>
+                    </td>
+                  </tr>
+                </table></ng-container
+              ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--></label
+            ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "djcjr"
+    }--></label
+          ><!--container-->
+          <div
+            class="ng-star-inserted"
+            style="margin: 0px; width: 100%; height: auto; position: static"
+          >
+            <div
+              class="enable-border full-width-height"
+              id="dahmt"
+              ng-reflect-ng-style="[object Object]"
+              style="
+                height: 100%;
+                padding: 0px;
+                background-color: transparent;
+                color: rgb(0, 0, 0);
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-blend-mode: normal;
+                border-width: 0px;
+                border-style: none;
+                border-color: rgb(255, 255, 255);
+                border-radius: 0px;
+                overflow: visible;
+              "
+            >
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: relative;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="2sfod5v9q2" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">Bagru</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: static;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="cs1n9p0f6u" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">Pakhar</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: static;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="v0085ymott" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">Sherengdag</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: static;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="613unl8ld7" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">Amti-Chirodih</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: static;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="vnuq7nenkp" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">Bimarla</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: static;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="kpms7phsg0" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">Gurdari</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: static;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="l8sd8c72sr" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">Kujam</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: static;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="y4ts771k88" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">Amptipani</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: static;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="jqiru3esir" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">Samri</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 55px;
+                  position: static;
+                  --arrow-size: 27.5px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="ottaw"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="e6vhcbtzyy" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 12%">
+                          Lohardaga-Railway-Siding
+                        </td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 8%">
+                          <b>0</b>
+                        </td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container--><!--container-->
+            </div>
+          </div>
+          <!--container-->
+          <div
+            class="ng-star-inserted"
+            style="
+              margin: 0px;
+              width: 100%;
+              height: 55px;
+              position: static;
+              --arrow-size: 27.5px;
+              --arrow-color: transparent;
+              --arrow-border-color: rgba(255, 255, 255, 100);
+            "
+          >
+            <div
+              class="enable-border full-width-height"
+              id="phqke"
+              ng-reflect-ng-class=""
+              ng-reflect-ng-style="[object Object]"
+              style="
+                height: 100%;
+                padding: 0px;
+                display: initial;
+                background-color: transparent;
+                color: rgb(0, 0, 0);
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-blend-mode: normal;
+                border-width: 0px 0px 1px;
+                border-style: none none solid;
+                border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(224, 224, 224);
+                border-radius: 0px;
+                transform: none;
+              "
+            >
+              <ng-container
+                ng-reflect-html='<table class="rt-border-top rt'
+                class="ng-star-inserted"
+              ></ng-container
+              ><ng-container hostid="qst9qxhacr" class="ng-star-inserted"
+                ><table
+                  class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                  style="border: 0; border-spacing: 0"
+                >
+                  <tr class="rt-flex-row rt-full-height">
+                    <td class="rt-border-right rt-pl-5" style="width: 12%">
+                      <b>Total Mines</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 8%">
+                      <b>0</b>
+                    </td>
+                  </tr>
+                </table></ng-container
+              ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+            </div>
+          </div>
+          <!--container--><!--container-->
+        </div>
+      </div>
+      <!--container-->
+      <div
+        class="ng-star-inserted"
+        style="
+          margin: 50px 0px 0px;
+          width: 60%;
+          height: auto;
+          position: static;
+          --arrow-size: 0px;
+          --arrow-color: transparent;
+          --arrow-border-color: rgba(255, 255, 255, 100);
+        "
+      >
+        <div
+          class="enable-border full-width-height"
+          id="xmfrk"
+          ng-reflect-ng-class=""
+          ng-reflect-ng-style="[object Object]"
+          style="
+            height: 100%;
+            padding: 0px;
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            background-image: none;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: left top;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-blend-mode: normal;
+            border-width: 0px;
+            border-style: none;
+            border-color: rgb(255, 255, 255);
+            border-radius: 0px;
+            transform: none;
+          "
+        >
+          <!--bindings={}--><!--ng-container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><label
+            class="d-flex ng-star-inserted"
+            style="margin: 0px; width: 100%; height: 40px; position: static"
+            ><label
+              class="mat-mdc-tooltip-trigger full-width-height ng-star-inserted"
+              ng-reflect-ng-class="full-width-height"
+              id="oixck"
+              ng-reflect-ng-style="[object Object]"
+              ng-reflect-position="below"
+              ng-reflect-tooltip-class="oixck-cssClass"
+              style="
+                padding: 0px;
+                font-weight: bold;
+                font-style: normal;
+                text-decoration: none;
+                word-break: normal;
+                font-family: Roboto, sans-serif;
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                text-transform: none;
+                writing-mode: horizontal-tb;
+                display: flex;
+                align-items: center;
+                background-color: transparent;
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-blend-mode: normal;
+                border-width: 1px 1px 0px;
+                border-style: solid solid none;
+                border-color: rgb(224, 224, 224) rgb(224, 224, 224) rgb(255, 255, 255);
+                border-radius: 0px;
+                transform: none;
+              "
+              ><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }-->BBSO Manpower<!--ng-container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--></label
+            ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "oixck"
+    }--></label
+          ><!--container-->
+          <div
+            class="ng-star-inserted"
+            style="
+              margin: 0px;
+              width: 100%;
+              height: 40px;
+              position: static;
+              --arrow-size: 20px;
+              --arrow-color: transparent;
+              --arrow-border-color: rgba(255, 255, 255, 100);
+            "
+          >
+            <div
+              class="enable-border full-width-height"
+              id="cvdgq"
+              ng-reflect-ng-class=""
+              ng-reflect-ng-style="[object Object]"
+              style="
+                height: 100%;
+                padding: 0px;
+                display: initial;
+                background-color: transparent;
+                color: rgb(0, 0, 0);
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-blend-mode: normal;
+                border-width: 0px;
+                border-style: none;
+                border-color: rgb(186, 188, 197) rgb(255, 255, 255) rgb(255, 255, 255);
+                border-radius: 0px;
+                transform: none;
+              "
+            >
+              <ng-container
+                ng-reflect-html='<table class="rt-border-top rt'
+                class="ng-star-inserted"
+              ></ng-container
+              ><ng-container hostid="f6y8x6u5uy" class="ng-star-inserted"
+                ><table
+                  class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                  style="border: 0; border-spacing: 0"
+                >
+                  <tr class="rt-flex-row rt-full-height">
+                    <td class="rt-border-right rt-pl-5" style="width: 60%">
+                      <b>Mines</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 20%">
+                      <b>Manpower</b>
+                    </td>
+                    <td class="rt-border-right rt-pl-5" style="width: 20%">
+                      <b>Target</b>
+                    </td>
+                  </tr>
+                </table></ng-container
+              ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+            </div>
+          </div>
+          <!--container-->
+          <div
+            class="ng-star-inserted"
+            style="margin: 0px; width: 100%; height: auto; position: static"
+          >
+            <div
+              class="enable-border full-width-height"
+              id="quxxk"
+              ng-reflect-ng-style="[object Object]"
+              style="
+                height: 100%;
+                padding: 0px;
+                background-color: transparent;
+                color: rgb(0, 0, 0);
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: left top;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-blend-mode: normal;
+                border-width: 0px 0px 1px;
+                border-style: none none solid;
+                border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(224, 224, 224);
+                border-radius: 0px;
+              "
+            >
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 50px;
+                  position: static;
+                  --arrow-size: 25px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="urrne"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px 0px 1px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(224, 224, 224);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="8xdu35mmu3" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 60%">
+                          Lohardaga-Railway-Siding
+                        </td>
+                        <td class="rt-border-right rt-pl-5" style="width: 20%">0</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 20%">1</td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container-->
+              <div
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 50px;
+                  position: static;
+                  --arrow-size: 25px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  class="enable-border full-width-height"
+                  id="urrne"
+                  ng-reflect-ng-class=""
+                  ng-reflect-ng-style="[object Object]"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: initial;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px 0px 1px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(224, 224, 224);
+                    border-radius: 0px;
+                    transform: none;
+                  "
+                >
+                  <ng-container
+                    ng-reflect-html='<table class="rt-border-top rt'
+                    class="ng-star-inserted"
+                  ></ng-container
+                  ><ng-container hostid="fyak9n15lu" class="ng-star-inserted"
+                    ><table
+                      class="rt-border-top rt-border-left rt-full-width rt-full-height"
+                      style="border: 0; border-spacing: 0"
+                    >
+                      <tr class="rt-flex-row rt-full-height">
+                        <td class="rt-border-right rt-pl-5" style="width: 60%">Samri</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 20%">77</td>
+                        <td class="rt-border-right rt-pl-5" style="width: 20%">87</td>
+                      </tr>
+                    </table></ng-container
+                  ><!--container--><!--bindings={
+      "ng-reflect-ng-if": "true"
+    }--><!--bindings={
+      "ng-reflect-ng-if": "false"
+    }--><!--container-->
+                </div>
+              </div>
+              <!--container--><!--container-->
+            </div>
+          </div>
+          <!--container--><!--container-->
+        </div>
+      </div>
+      <!--container--><!--container-->
+    </div>
+  </div>
+
+  <div class="ng-star-inserted" style="margin: 0px; width: 100%; height: 100%; position: static">
+    <div
+      class="enable-border full-width-height"
+      id="khoyt"
+      style="
+        height: 100%;
+        padding: 20px 20px 0px;
+        font-size: 13px;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: left top;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-blend-mode: normal;
+        border-width: 0px;
+        border-style: none;
+        border-color: rgb(255, 255, 255);
+        border-radius: 0px;
+        opacity: 1;
+        overflow: visible;
+        cursor: auto;
+        pointer-events: auto;
+      "
+    >
+      <!---->
+      <div class="rt-flex-items rt-full-height display-properties">
+        <div
+          _nghost-ng-c1482363183=""
+          class="ng-star-inserted"
+          style="
+            margin: 0px;
+            width: 100%;
+            height: 8%;
+            position: static;
+            --arrow-size: 31px;
+            --arrow-color: transparent;
+            --arrow-border-color: rgba(255, 255, 255, 100);
+          "
+        >
+          <div
+            _ngcontent-ng-c1482363183=""
+            class="enable-border full-width-height dark-light-theme-container"
+            id="heolo"
+            draggable="false"
+            style="
+              height: 100%;
+              padding: 0px;
+              display: block;
+              background-color: transparent;
+              font-size: 13px;
+              background-image: none;
+              background-repeat: no-repeat;
+              background-size: auto;
+              background-position: left top;
+              background-attachment: scroll;
+              background-clip: border-box;
+              background-blend-mode: normal;
+              border-width: 0px;
+              border-style: none;
+              border-color: rgb(255, 255, 255);
+              border-radius: 0px;
+              opacity: 1;
+              overflow: visible;
+              cursor: auto;
+              pointer-events: auto;
+              transform: none;
+            "
+          >
+            <!---->
+            <div
+              _ngcontent-ng-c1482363183=""
+              class="display-inherit-properties rt-flex-items full-width-height"
+              style="display: block"
+            >
+              <!----><!----><!---->
+              <div
+                _nghost-ng-c1482363183=""
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: auto;
+                  position: static;
+                  --arrow-size: 0px;
+                  --arrow-color: transparent;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  _ngcontent-ng-c1482363183=""
+                  class="enable-border full-width-height dark-light-theme-container"
+                  id="svdiw"
+                  draggable="false"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: flex;
+                    background-color: transparent;
+                    font-size: 13px;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    opacity: 1;
+                    overflow: visible;
+                    cursor: auto;
+                    pointer-events: auto;
+                    transform: none;
+                  "
+                >
+                  <div
+                    _ngcontent-ng-c1482363183=""
+                    class="display-inherit-properties rt-flex-items full-width-height"
+                    style="display: flex"
+                  >
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 80%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="syiob"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          color: rgb(244, 67, 54);
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->Questions<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="bawcq"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          color: rgb(244, 67, 54);
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->Remarks<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="rvpws"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          color: rgb(244, 67, 54);
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->Answers<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!----><!---->
+                  </div>
+                </div>
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!---->
+              <div
+                class="d-flex ng-star-inserted"
+                style="margin: 0px; width: 100%; height: auto; position: static"
+              >
+                <label
+                  class="dark-light-theme-label full-width-height ng-star-inserted"
+                  id="aktma"
+                  draggable="false"
+                  style="
+                    padding: 0px;
+                    font-weight: normal;
+                    font-style: normal;
+                    text-decoration: none;
+                    word-break: normal;
+                    font-family: Roboto, sans-serif;
+                    color: rgb(7, 138, 59);
+                    font-size: 13px;
+                    text-transform: none;
+                    writing-mode: horizontal-tb;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    cursor: auto;
+                    pointer-events: auto;
+                    opacity: 1;
+                    overflow: visible;
+                    text-overflow: clip;
+                    white-space: normal;
+                    transform: none;
+                  "
+                  ><!---->General (Load, Store and Transport Conveyor Belt Procedure)<!----><!----></label
+                ><!----><!----><!---->
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!----><!---->
+            </div>
+          </div>
+        </div>
+        <div class="ng-star-inserted" style="display: none"></div>
+        <!---->
+        <div
+          _nghost-ng-c1482363183=""
+          class="ng-star-inserted"
+          style="
+            margin: 0px;
+            width: 100%;
+            height: 90%;
+            position: static;
+            --arrow-size: 348.5px;
+            --arrow-color: transparent;
+            --arrow-border-color: rgba(255, 255, 255, 100);
+          "
+        >
+          <div
+            _ngcontent-ng-c1482363183=""
+            class="enable-border full-width-height dark-light-theme-container"
+            id="ilvvs"
+            draggable="false"
+            style="
+              height: 100%;
+              padding: 0px;
+              display: flex;
+              flex-direction: column;
+              background-color: transparent;
+              font-size: 13px;
+              background-image: none;
+              background-repeat: no-repeat;
+              background-size: auto;
+              background-position: left top;
+              background-attachment: scroll;
+              background-clip: border-box;
+              background-blend-mode: normal;
+              border-width: 0px;
+              border-style: none;
+              border-color: rgb(255, 255, 255);
+              border-radius: 0px;
+              opacity: 1;
+              overflow: visible;
+              cursor: auto;
+              pointer-events: auto;
+              transform: none;
+            "
+          >
+            <!---->
+            <div
+              _ngcontent-ng-c1482363183=""
+              class="display-inherit-properties rt-flex-items full-width-height"
+              style="display: flex; flex-direction: column"
+            >
+              <!----><!----><!---->
+              <div
+                _nghost-ng-c1482363183=""
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 10%;
+                  position: static;
+                  --arrow-size: 35px;
+                  --arrow-color: #fff;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  _ngcontent-ng-c1482363183=""
+                  class="enable-border full-width-height dark-light-theme-container"
+                  id="brxhv"
+                  draggable="false"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: flex;
+                    font-size: 13px;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    opacity: 1;
+                    overflow: visible;
+                    cursor: auto;
+                    pointer-events: auto;
+                    transform: none;
+                  "
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c1482363183=""
+                    class="display-inherit-properties rt-flex-items full-width-height"
+                    style="display: flex"
+                  >
+                    <!----><!----><!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="eoubu"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        >1</label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 70%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="dvrom"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->Is this procedure applicable in the area or activity? If not mark as
+                        not applicable?<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="ehwrq"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->NA<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: 40%; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="eiaux"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          text-align: center;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          background-color: rgb(244, 67, 54);
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->NO<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!----><!---->
+                  </div>
+                </div>
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!---->
+              <div
+                _nghost-ng-c1482363183=""
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 10%;
+                  position: static;
+                  --arrow-size: 35px;
+                  --arrow-color: #fff;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  _ngcontent-ng-c1482363183=""
+                  class="enable-border full-width-height dark-light-theme-container"
+                  id="agvpk"
+                  draggable="false"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: flex;
+                    font-size: 13px;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    opacity: 1;
+                    overflow: visible;
+                    cursor: auto;
+                    pointer-events: auto;
+                    transform: none;
+                  "
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c1482363183=""
+                    class="display-inherit-properties rt-flex-items full-width-height"
+                    style="display: flex"
+                  >
+                    <!----><!----><!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="wrjdi"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->2<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 70%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="xrmrl"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->Is the document within its revision date?<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="rlpry"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->NA<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: 40%; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="tpexf"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          text-align: center;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          background-color: rgb(245, 224, 101);
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->NA<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!----><!---->
+                  </div>
+                </div>
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!---->
+              <div
+                _nghost-ng-c1482363183=""
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 10%;
+                  position: static;
+                  --arrow-size: 35px;
+                  --arrow-color: #fff;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  _ngcontent-ng-c1482363183=""
+                  class="enable-border full-width-height dark-light-theme-container"
+                  id="mqhiz"
+                  draggable="false"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: flex;
+                    font-size: 13px;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    opacity: 1;
+                    overflow: visible;
+                    cursor: auto;
+                    pointer-events: auto;
+                    transform: none;
+                  "
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c1482363183=""
+                    class="display-inherit-properties rt-flex-items full-width-height"
+                    style="display: flex"
+                  >
+                    <!----><!----><!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="corfz"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->3<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 70%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="kxsac"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->Are all areas where the procedure will be used under the supervision
+                        of a legally appointed supervisor? (2.9.2 appointee?)<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="bdxdv"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->NA<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: 40%; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="jylov"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          text-align: initial;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          background-color: rgb(245, 224, 101);
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->NA<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!----><!---->
+                  </div>
+                </div>
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!---->
+              <div
+                _nghost-ng-c1482363183=""
+                class="ng-star-inserted"
+                style="
+                  margin: 0px;
+                  width: 100%;
+                  height: 10%;
+                  position: static;
+                  --arrow-size: 35px;
+                  --arrow-color: #fff;
+                  --arrow-border-color: rgba(255, 255, 255, 100);
+                "
+              >
+                <div
+                  _ngcontent-ng-c1482363183=""
+                  class="enable-border full-width-height dark-light-theme-container"
+                  id="ktthe"
+                  draggable="false"
+                  style="
+                    height: 100%;
+                    padding: 0px;
+                    display: flex;
+                    font-size: 13px;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-blend-mode: normal;
+                    border-width: 0px;
+                    border-style: none;
+                    border-color: rgb(255, 255, 255);
+                    border-radius: 0px;
+                    opacity: 1;
+                    overflow: visible;
+                    cursor: auto;
+                    pointer-events: auto;
+                    transform: none;
+                  "
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c1482363183=""
+                    class="display-inherit-properties rt-flex-items full-width-height"
+                    style="display: flex"
+                  >
+                    <!----><!----><!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="fuxyi"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->4<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 70%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="uimpy"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->If any activity is completed by a contractor or service provider,
+                        did they follow the Khumani procedure and use Khumani documentation?<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: auto; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="krwub"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->NA<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!---->
+                    <div
+                      class="d-flex ng-star-inserted"
+                      style="margin: 0px; width: 10%; height: 40%; position: static"
+                    >
+                      <label
+                        class="dark-light-theme-label full-width-height ng-star-inserted"
+                        id="ksaxi"
+                        draggable="false"
+                        style="
+                          padding: 0px;
+                          font-weight: normal;
+                          font-style: normal;
+                          text-decoration: none;
+                          word-break: normal;
+                          font-family: Roboto, sans-serif;
+                          font-size: 13px;
+                          text-transform: none;
+                          writing-mode: horizontal-tb;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          background-color: rgb(244, 67, 54);
+                          background-image: none;
+                          background-repeat: no-repeat;
+                          background-size: auto;
+                          background-position: left top;
+                          background-attachment: scroll;
+                          background-clip: border-box;
+                          background-blend-mode: normal;
+                          border-width: 0px;
+                          border-style: none;
+                          border-color: rgb(255, 255, 255);
+                          border-radius: 0px;
+                          cursor: auto;
+                          pointer-events: auto;
+                          opacity: 1;
+                          overflow: visible;
+                          text-overflow: clip;
+                          white-space: normal;
+                          transform: none;
+                        "
+                        ><!---->NO<!----><!----></label
+                      ><!----><!----><!---->
+                    </div>
+                    <div class="ng-star-inserted" style="display: none"></div>
+                    <!----><!---->
+                  </div>
+                </div>
+              </div>
+              <div class="ng-star-inserted" style="display: none"></div>
+              <!----><!---->
+            </div>
+          </div>
+        </div>
+        <div class="ng-star-inserted" style="display: none"></div>
+        <!----><!---->
+      </div>
+    </div>
+  </div>
+</div>

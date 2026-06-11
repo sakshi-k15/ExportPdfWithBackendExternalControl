@@ -1,0 +1,67 @@
+/* Dashboard Application Styling Primitives */
+.report-content-root {
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.control-panel {
+  padding: 16px;
+  background-color: #f1f5f9;
+  border-bottom: 1px solid #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.export-pdf-btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.report-data-grid {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.report-data-grid th {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+}
+
+.report-data-grid td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* ==========================================================================
+   CHROMIUM NATIVE PRINT CSS CONFIGURATION FOR PLAYWRIGHT
+   ========================================================================== */
+@media print {
+  /* Enforce exact background colors and rendering across layouts */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Automatically hide the export controls in the final PDF output */
+  .control-panel, button, .export-pdf-btn {
+    display: none !important;
+  }
+
+  /* Prevent vector charts, images, and single table rows from splitting in half */
+  svg, ngx-charts-bar-vertical, img, tr {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Automatically repeat table column headers at the top of subsequent pages */
+  thead {
+    display: table-header-group !important;
+  }
+}
