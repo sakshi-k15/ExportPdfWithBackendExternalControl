@@ -1,7 +1,16 @@
 import 'zone.js';
 
-import { bootstrapApplication } from '@angular/platform-browser';
+import { bootstrapApplication, createApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
+import { createCustomElement } from '@angular/elements';
 import { AppComponent } from './app/app';
 
-bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
+(async () => {
+  const app = await createApplication(appConfig);
+
+  const appElement = createCustomElement(AppComponent, { injector: app.injector });
+
+  if (!customElements.get('exportpdf-widget')) {
+    customElements.define('exportpdf-widget', appElement);
+  }
+})();
