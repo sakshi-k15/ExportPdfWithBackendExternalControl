@@ -4,9 +4,10 @@
   "description": "Playwright PDF Generation Backend",
   "type": "module",
   "main": "server.ts",
-  "scripts": {
-    "start": "node --loader ts-node/esm server.ts"
-  },
+"scripts": {
+  "start": "tsx server.ts",
+  "dev": "tsx watch server.ts"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -1,0 +1,29 @@
+{
+  "name": "external-den-core",
+  "version": "0.0.1",
+  "dependencies": {
+    "date-fns": "2.30.0",
+    "date-fns-tz": "2.0.0",
+    "@angular/material": "17.3.0",
+    "subsink": "1.0.2",
+    "@tweenjs/tween.js": "23.1.1",
+    "keyboardjs": "2.7.0",
+    "@capacitor/network": "5.0.7",
+    "convert-units": "3.0.0-beta.6",
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2022/external-den-core.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/external-den-core.mjs",
+      "esm": "./esm2022/external-den-core.mjs",
+      "default": "./fesm2022/external-den-core.mjs"
+    }
+  },
+  "sideEffects": false
+}
