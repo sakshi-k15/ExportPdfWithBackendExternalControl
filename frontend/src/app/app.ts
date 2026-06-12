@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { CommonModule } from '@angular/common';
+import { environment } from '../environment/environment';
 
 @Component({
   selector: 'app-root',
@@ -30,10 +31,10 @@ export class AppComponent {
 
     const currentUrl = window.location.href;
     console.log(`Sending print pipeline request to backend for: ${currentUrl}`);
-    console.log('Calling API:', 'http://localhost:3000/api/generate-pdf');
+
     this.http
       .post(
-        'http://localhost:3000/api/generate-pdf',
+        `${environment.apiUrl}/generate-pdf`,
         {
           reportUrl: currentUrl,
           userName: 'Sakshi K',
